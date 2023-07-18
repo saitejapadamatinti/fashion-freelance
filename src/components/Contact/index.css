@@ -1,0 +1,76 @@
+.contactcontent-main-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-main-div {
+    width: 80%;
+
+}
+
+.contact-main-div-inputs {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.contact-inputs-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #7f7f7f80;
+    width: 100%;
+}
+
+.contact-inputs-div input {
+    /* width: 70%; */
+    border: none;
+    border-bottom: 1px solid #7f7f7f80;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 14px;
+}
+
+.contact-inputs-div textarea {
+    min-width: 100%;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    min-height: 220px;
+    font-size: 16px;
+    padding: 14px;
+}
+
+.contact-send-message-button {
+    height: auto;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 15px 30px;
+    font-size: 1em;
+    width: auto;
+    /* outline: none; */
+    border: 1px solid #7f7f7f80;
+    color: #404040;
+    margin-top: 10px;
+}
+
+.contact-main-contact-head {
+    font-family: 'Benne', serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.contact-main-contact-para {
+    color: #404040;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+    .contact-main-div {
+        width: 100%;
+    }
+}

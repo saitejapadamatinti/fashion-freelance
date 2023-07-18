@@ -1,0 +1,52 @@
+.home-page-images-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.home-image {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(32, 32, 32, 0.299);
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 578px) {
+    .home-page-images-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+    }
+
+    .home-text {
+        font-size: 18px;
+    }
+}
